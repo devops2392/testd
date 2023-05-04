@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>New_Patient_Record_Create_Notification_Alert</fullName>
+        <description>New Patient Record Create Notification Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>pailla2390@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pailla2391@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pailla2392@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pailla2393@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Patient_Age_less_than_2_years</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Patient_Record_Create_Notification_Alert123</fullName>
+        <description>New Patient Record Create Notification Alert123</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>pailla2390@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pailla2391@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pailla2392@cis.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pailla2392@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pailla2393@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Patient_Age_less_than_2_years</template>
+    </alerts>
+    <rules>
+        <fullName>Patient Age less than 2 years</fullName>
+        <actions>
+            <name>New_Patient_Record_Create_Notification_Alert123</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Patient__c.Age__c</field>
+            <operation>lessThan</operation>
+            <value>2</value>
+        </criteriaItems>
+        <description>Patient Age less than 2 years</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>
