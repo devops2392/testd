@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Insurance_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Term Plan</fullName>
+                <default>false</default>
+                <label>Term Plan</label>
+            </value>
+            <value>
+                <fullName>Unit linked Insurance plan</fullName>
+                <default>false</default>
+                <label>Unit linked Insurance plan</label>
+            </value>
+            <value>
+                <fullName>Third party Insurance</fullName>
+                <default>false</default>
+                <label>Third party Insurance</label>
+            </value>
+            <value>
+                <fullName>Fire</fullName>
+                <default>false</default>
+                <label>Fire</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Life Insurance</controllingFieldValue>
+            <controllingFieldValue>Motor Insurance</controllingFieldValue>
+            <controllingFieldValue>Health Insurance</controllingFieldValue>
+            <valueName>Term Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Insurance</controllingFieldValue>
+            <controllingFieldValue>Motor Insurance</controllingFieldValue>
+            <valueName>Unit linked Insurance plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Insurance</controllingFieldValue>
+            <controllingFieldValue>Health Insurance</controllingFieldValue>
+            <valueName>Third party Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Motor Insurance</controllingFieldValue>
+            <valueName>Fire</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
